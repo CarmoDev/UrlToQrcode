@@ -22,7 +22,7 @@ export default function FetchApi() {
     const url = urlInput.value;
     const format = formatInput.value
 
-    fetch(`http://localhost:3000/qr?url=${url}&format=${format}`)
+    fetch(`https://power-tan-sherbet.glitch.me/qr?url=${url}&format=${format}`)
       .then((response) => response.blob())
       .then((blob) => {
         let urlImage = URL.createObjectURL(blob);
